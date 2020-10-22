@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class NewClass {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int jml_mhs, jml, jml2, kelas;
+        System.out.print("Masukkan jumlah mhs: ");
+        jml_mhs = scan.nextInt();
+        //jika lebih dari 10 mhs per kelas, maka akan tampil berapa kelas?
+        jml = jml_mhs / 40;
+        jml2 = jml_mhs % 40;
+        System.out.println("jumlah kelas tanpa sisa = " + jml);
+        System.out.println("sisa hasil bagi mhs = " + jml2);
+        if (jml2 < 10) {
+            kelas = jml;
+            System.out.println("Total Kelas yang akan dibuka sebanyak = " + kelas);
+        } if (jml2 >= 10 && jml2 <= 40) { //Range kelas maksimal
+            kelas = jml + 1;
+            System.out.println("Total Kelas yang akan dibuka sebanyak = " + kelas);
+        }  else {
+            System.out.println("dimasukkan ke kelas yang sudah ada");
+        }
+    }
+}
