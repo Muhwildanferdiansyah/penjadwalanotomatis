@@ -1,2 +1,2 @@
 # penjadwalanotomatis
- PPK Otomatisasi Penjadwalan MK 
+ PPK Penjadwalan Otomatis
